@@ -8,6 +8,16 @@ h1{
     color: bisque;
     font-size: 5rem;
 }
+#mob-footer{
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+    color: bisque;
+    letter-spacing: 5px;
+    font-size: 10px;
+    visibility: hidden;
+    z-index: 1;
+}
 #announce {
     text-align: center;
 }
@@ -52,5 +62,11 @@ div img {
 @media(max-width: 540px){
     #players {
         flex-direction: column;
+    }
+    #footer {
+        visibility: hidden;
+    }
+    #mob-footer {
+        visibility: visible;
     }
 }
