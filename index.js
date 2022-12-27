@@ -1,11 +1,13 @@
 function winner(name, num){
     document.querySelector(name+" img").setAttribute("src" , "images/dice"+num+".png");
-    document.querySelector(name+" p").textContent = "Winner!! 🚩";
+    let st = name.substr(1) ;
+    document.querySelector(name+" p").textContent = st+" : Won!! 🚩";
 }
 
 function loser(name, num){
     document.querySelector(name+" img").setAttribute("src" , "images/dice"+num+".png");
-    document.querySelector(name+" p").textContent = "Lost 😶";
+    let st = name.substr(1) ;
+    document.querySelector(name+" p").textContent = st+" : Lost 😶";
 }
 function draw(name1, num1, name2, num2){
     document.querySelector(name1+" img").setAttribute("src" , "images/dice-roll.gif");

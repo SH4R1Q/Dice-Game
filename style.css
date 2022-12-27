@@ -20,6 +20,7 @@ button {
     font-size: 20px;
     letter-spacing: 5px;
     box-shadow: 10px 10px 20px black;
+    cursor: pointer;
 }
 #players {
     box-sizing: border-box;
